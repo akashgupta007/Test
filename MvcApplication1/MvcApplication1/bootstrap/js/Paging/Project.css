@@ -1,0 +1,44 @@
+﻿body {
+}
+
+/* Loding Div Css */
+/*.LoadingDiv{        
+    width:100%;
+    display:block;
+}
+.content{
+    background:#fff;
+    padding: 28px 26px 33px 25px;
+}
+.popup{
+    border-radius: 7px;
+    background:#6b6a63;
+    margin:30px auto 0;
+    padding:6px;  
+    position:absolute;
+    width:100px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -40px;
+}*/
+
+
+.LoadingDiv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+#loading {
+    width: 50px;
+    height: 57px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+}
