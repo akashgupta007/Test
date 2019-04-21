@@ -13,7 +13,6 @@
     <link href="../../AdminLTE-master/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="../../AdminLTE-master/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
     <link rel="stylesheet" href="../../AdminLTE-master/dist/css/AdminLTE.min.css">
     <link rel="stylesheet" href="../../AdminLTE-master/dist/css/skins/_all-skins.min.css">
 </head>
@@ -631,8 +630,7 @@
     <script src="../../AdminLTE-master/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <script src="../../AdminLTE-master/plugins/fastclick/fastclick.js"></script>
     <script src="../../AdminLTE-master/dist/js/app.min.js"></script>
-    <script src="../../AdminLTE-master/dist/js/demo.js"></script>   
-   
+    <script src="../../AdminLTE-master/dist/js/demo.js"></script>
     <asp:ContentPlaceHolder ID="ScriptsSection" runat="server" />
 </body>
 </html>
