@@ -35,8 +35,8 @@ namespace MvcApplication1.Controllers
                 {
                     cssClass = _parentItem[i]["cssClass"].ToString();
                     optionName = _parentItem[i]["OptionName"].ToString();
-                    var liParentActive = i == 0 ? "class='active treeview'" : "class='treeview'";
-                    htmlTable.Append("<li '" + liParentActive + "'><a href='#'><i class='" + cssClass + "'></i><span>" + optionName + "</span> <i class='fa fa-angle-left pull-right'></i></a>");
+                    var liParentActive = i == 0 ? "active treeview" : "treeview";
+                    htmlTable.Append("<li class=" + liParentActive + "><a href='#'><i class='" + cssClass + "'></i><span>" + optionName + "</span> <i class='fa fa-angle-left pull-right'></i></a>");
                     htmlTable.Append("<ul class='treeview-menu'>");
                     var MenuID = _parentItem[i]["MenuID"];
                     var _childMenu = (from sItem in _mInfo.AsEnumerable() where sItem.Field<string>("ParentID").Equals(MenuID) select sItem).ToList();
@@ -49,8 +49,8 @@ namespace MvcApplication1.Controllers
                         {
                             childCssClass = _childMenu[j]["cssClass"].ToString();
                             childOptionName = _childMenu[j]["OptionName"].ToString();
-                            var liActive = j == 0 && i == 0 ? "class='active'" : "";
-                            htmlTable.Append("<li '" + liActive + "'><a href=''><i class='" + childCssClass + "'></i>" + childOptionName + "</a></li>");
+                            var liActive = j == 0 && i == 0 ? "active" : "";
+                            htmlTable.Append("<li class=" + liActive + "><a href=''><i class='" + childCssClass + "'></i>" + childOptionName + "</a></li>");
                         }
                         htmlTable.Append("</ul>");
                     }
