@@ -1,81 +1,180 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="../../Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="../Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <style>
+        .set-b-color {
+            border: 1px solid red;
+        }
+
+        .set-color {
+            color: red;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        input {
+            height: 26px !important;
+        }
+    </style>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="FeaturedContent" runat="server">
     <section class="content-header">
-        <h1>Dashboard
-        <small>Version 2.0</small>
-        </h1>
+      
+        <small>Employee</small>
+      
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
-            <li class="active">Dashboard</li>
+            <li class="active">Employee</li>
         </ol>
     </section>
     <!-- Main content -->
     <section class="content">
         <div class="box box-default">
             <div class="box-body">
+
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Minimal</label>
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected">Alabama</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                            </select>
+
+                        <div class="box box-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="bg-blue">
+                                <label class="widget-user-username"></label>
+                            </div>
+                            <div class="box">
+                                <div class="form-group">
+                                    <label>Emp Code</label>
+                                    <input type="text" style="width: 100%;" class="form-control" placeholder="Emp Code" />
+
+                                    <label>First Name</label>
+                                    <input type="text" style="width: 100%;" class="form-control" placeholder="First Name" />
+
+                                    <label>Last Name</label>
+                                    <input type="text" style="width: 100%;" class="form-control" placeholder="Last Name" />
+
+                                    <label>Gender</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                        <option selected="selected">Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <!-- /.form-group -->
-                        
-                        <!-- /.form-group -->
+
+
                     </div>
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Minimal</label>
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected">Alabama</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                            </select>
+                        <div class="box box-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class=" bg-blue">
+                                <label class="widget-user-username"></label>
+                            </div>
+                            <div class="box">
+                                <div class="form-group">
+                                    <label>Company</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                        <option selected="selected">Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select>
+
+                                    <label>Location</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                        <option selected="selected">Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select>
+
+                                    <label>Reporting Officer</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                        <option selected="selected">Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select>
+
+                                    
+                                </div>
+
+                            </div>
                         </div>
-                        <!-- /.form-group -->
-                        
-                        <!-- /.form-group -->
                     </div>
                     <div class="col-md-4">
-                        <div class="form-group">
-                            <label>Minimal</label>
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected">Alabama</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                            </select>
+                        <div class="box box-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class=" bg-blue">
+                                <label class="widget-user-username"></label>
+                            </div>
+                            <div class="box">
+                                <div class="form-group">
+                                    <label>Employee Category</label>
+                                    <select class="form-control select2" style="width: 100%;">
+                                        <option selected="selected">Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select>
+
+                                    <label>Employee Type</label>
+                                    <select class="form-control" style="width: 100%;">
+                                        <option selected="selected">Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select>
+
+                                    <label>Category</label>
+                                    <select class="form-control" style="width: 100%;">
+                                        <option selected="selected">Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                         <!-- /.form-group -->
-                        
+
                         <!-- /.form-group -->
                     </div>
                 </div>
                 <footer>
                     <div class="row">
                         <div class="col-md-6 text-left">
-                            <button type="button" id="btnUpdate" name="btnUpdate" class="btn btn-default btn-sm">Cancel</button>
+                            <button type="button" id="btnCanel" name="btnCanel" class="btn btn-default btn-sm">Cancel</button>
                         </div>
+
                         <div class="col-md-6 text-right">
+                            <div id="pBar" class="hide">
+                                <img src="../../Images/Spin-0.9s-17px.gif" />
+                            </div>
+
                             <button type="button" id="btnInsert" name="btnInsert" class="btn  btn-success btn-sm">Save</button>
 
                         </div>
@@ -89,10 +188,13 @@
                 <!-- Custom Tabs -->
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab_1" data-toggle="tab">Tab 1</a></li>
-                        <li><a href="#tab_2" data-toggle="tab">Tab 2</a></li>
-                        <li><a href="#tab_3" data-toggle="tab">Tab 3</a></li>
-
+                        <li class="active"><a href="#tab_1" data-toggle="tab">PIS</a></li>
+                        <li><a href="#tab_2" data-toggle="tab">General Info</a></li>
+                        <li><a href="#tab_3" data-toggle="tab">Communication Info</a></li>
+                        <li><a href="#tab_4" data-toggle="tab">Family Info</a></li>
+                        <li><a href="#tab_5" data-toggle="tab">Education</a></li>
+                        <li><a href="#tab_6" data-toggle="tab">Employer Info</a></li>
+                        <li><a href="#tab_7" data-toggle="tab">Salary</a></li>
                         <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
                     </ul>
                     <div class="tab-content">
@@ -125,6 +227,46 @@
                         </div>
                         <!-- /.tab-pane -->
                         <div class="tab-pane" id="tab_3">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.
+             
+                        </div>
+                        <div class="tab-pane" id="tab_4">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.
+             
+                        </div>
+                        <div class="tab-pane" id="tab_5">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.
+             
+                        </div>
+                        <div class="tab-pane" id="tab_6">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                like Aldus PageMaker including versions of Lorem Ipsum.
+             
+                        </div>
+                        <div class="tab-pane" id="tab_7">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -262,9 +404,19 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ScriptsSection" runat="server">
     <script>
-        $("#btnInsert").click(function () {            
-            $("div.form-group").find("input,select").css("border-color", "red");
-            $("div.form-group").find("label").css("color", "red");
-        });        
+        $("#btnInsert").click(function () {
+            $("#btnInsert").hide();
+            $("div.form-group").find("input,select").addClass("set-b-color");
+            $("div.form-group").find("label").addClass("set-color");
+            $("#pBar").removeClass("hide").addClass("show");
+        });
+
+        $("#btnCanel").click(function () {
+            $("div.form-group").find("input,select").removeClass("set-b-color");
+            $("div.form-group").find("label").removeClass("set-color");
+            $("#btnInsert").show();
+            $("#pBar").removeClass("show").addClass("hide");
+        });
+
     </script>
 </asp:Content>
