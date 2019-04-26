@@ -188,13 +188,13 @@
                 <!-- Custom Tabs -->
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#tab_1" data-toggle="tab">PIS</a></li>
-                        <li><a href="#tab_2" data-toggle="tab">General Info</a></li>
-                        <li><a href="#tab_3" data-toggle="tab">Communication Info</a></li>
-                        <li><a href="#tab_4" data-toggle="tab">Family Info</a></li>
-                        <li><a href="#tab_5" data-toggle="tab">Education</a></li>
-                        <li><a href="#tab_6" data-toggle="tab">Employer Info</a></li>
-                        <li><a href="#tab_7" data-toggle="tab">Salary</a></li>
+                        <li class="active"><a href="#tab_1" data-toggle="tab"><i class="fa fa-clock-o"></i> PIS</a></li>
+                        <li><a href="#tab_2" data-toggle="tab"><i class="fa fa-clock-o"></i> General Info</a></li>
+                        <li><a href="#tab_3" data-toggle="tab"><i class="fa fa-clock-o"></i> Communication Info</a></li>
+                        <li><a href="#tab_4" data-toggle="tab"><i class="fa fa-clock-o"></i> Family Info</a></li>
+                        <li><a href="#tab_5" data-toggle="tab"><i class="fa fa-clock-o"></i> Education</a></li>
+                        <li><a href="#tab_6" data-toggle="tab"><i class="fa fa-clock-o"></i> Employer Info</a></li>
+                        <li><a href="#tab_7" data-toggle="tab"><i class="fa fa-clock-o"></i> Salary</a></li>
                         <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
                     </ul>
                     <div class="tab-content">
