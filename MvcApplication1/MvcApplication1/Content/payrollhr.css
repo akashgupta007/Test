@@ -1,0 +1,19 @@
+﻿.set-b-color {
+border: 1px solid #D43F3A;
+}
+
+.set-color {
+color: #D43F3A;
+}
+
+.hide {
+display: none;
+}
+
+.show {
+display: block;
+}
+
+input {
+height: 26px !important;
+}
